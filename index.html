@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release-pro/v4.0.0/css/line.css">
+    <title>Portfolio Website</title>
+</head>
+<body>   
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2><a href="">@TK_Portfolio</a></h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <i class="uil uil-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="uil uil-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p class="profession">Hello!</p>
+                <h6>I am Tshenolo Kabikwa, a Frontend Developer.<br>Welcome to my portfolio website.</h6><br>
+            </div>
+            <div class="contact">
+                <ul>
+                    <li><a href="mailto:tckabikwa@gmail.com"><i class="uil uil-envelope-alt" id="icon"></i></a></li>
+                    <li><a href="https://linkedin.com/in/tshenolo-kabikwa"><i class="uil uil-linkedin" id="icon"></i></a></li>
+                    <li><a href="https://github.com/TshenoloKab?tab=repositories"><i class="uil uil-github" id="icon"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!------------------ About section ------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="./desk.jpg" alt="">
+                </div>
+                <div class="about-col2">
+                    <h1 class="about-title" id="about-me">About me</h1><br>
+                    <p>I am a detail-oriented and results-driven developer
+                    with a proven hands-on experience in creating real 
+                    world practical projects and a background experience in implementation and end-user support. I am continuosly looking to contribute 
+                    fully and grow in the dynamic domains of Software Engineering.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('badges')">Badges</p>
+                    </div>
+                    <hr>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Development Scripting </span><br>| <i class="uil uil-html5" id="icon-project"></i>HTML | <i class="uil uil-css3-simple" id="icon-project"></i>CSS | 
+                            <i class="uil uil-java-script" id="icon-project"></i>JavaScript | <i class="uil uil-react" id="icon-project"></i>React |</li>
+                            <li><span>Technologies & Methods</span><br>| <i class="uil uil-visual-studio" id="icon-project"></i> Vs Code | <i class="uil uil-github" id="icon-project"></i>Github | <i class="uil uil-setting" id="icon-project"></i> APIs | <i class="uil uil-mobile-android" id="icon-project"></i>Responsive Designs |</li>
+                            <li><span>Implementation & End-user Support</span><br>| Product Knowledge |Problem Solving | Teamwork | Communication | Patience |</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Oasis InfoByte </span><p id="dates">Feb.2024 - current</p>Web Development Internship - developing real world projects using frontend technologies |HTML|CSS|JavaScript|Github|, creating and improving web-based systems.</li>
+                            <li><span>Absa Bank Botswana</span><p id="dates">Jan.2006 - Apr.2020</p>Implementation and Customer Support - worked closely with the Implementation team, managing online banking platforms, providing installations and end-user support.</li>
+                            <li><span>Barclays Bank of Botswana</span><p id="dates">Feb.2002 - Jan.2006</p>IT Helpdesk Technician - acted as first point of contact for customers, troubleshooting end-user reported technical issues.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>IBM (Coursera)</span><br>Applied Software Engineering Fundamentals</li>
+                            <li><span>IBM (Coursera)</span><br>Full Stack Software Developer</li>
+                            <li><span>University of Botswana</span><br>Computer Science Diploma</li>
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="badges">
+                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="87df225d-5836-4e37-a537-4943bb577eae" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="ce50cb9a-0069-4b8f-8926-f04db610e9de" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="9f1cd38c-1331-4dbf-afed-aaa79662d0cc" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="e85ec287-2b1b-4da7-a9b6-e5febcc77d0e" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                    </div>            
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------- Services -------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="uil uil-arrow" id="icon"></i>
+                    <h2>Frontend Development</h2>
+                    <p>Web / App Development, Single Page Application (SPA), API Integrations.</p>
+                </div>
+                <div>
+                    <i class="uil uil-mobile-android" id="icon-project"></i>
+                    <h2>Responsive Designs</h2>
+                    <p>Developing web applications that are designed to work seamlessly on various devices
+                    and screen sizes, providing a consistent experience across platforms.</p>
+                </div>
+                <div>
+                    <i class="uil uil-github" id="icon"></i>
+                    <h2>Version Control</h2>
+                    <p>Managing code changes using version control system.</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!--------------- Projects -------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="./Landing Page.jpg" alt="">
+                    <div class="notes">
+                        <h3>Landing Page</h3>
+                        <p>eLearning responsive landing page, that allows users to search for their desired coding courses.<span id="languages"> <i class="uil uil-html5" id="icon-project"></i> <i class="uil uil-css3-simple" id="icon-project"></i> </span></p>
+                        <a href="https://tshenolokab.github.io/OIBSIP-WebDevTask1/"><i class="uil uil-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="./Weather.jpg " alt="">
+                    <div class="notes">
+                        <h3>Weather App</h3>
+                        <p>Allows users to retrieve weather conditions for any desired city
+                         worldwide through a simple search feature.<span> <i class="uil uil-html5" id="icon-project"></i> <i class="uil uil-css3-simple" id="icon-project"> </i><i class="uil uil-java-script" id="icon-project"></i> </span></p>
+                        <a href="https://tshenolokab.github.io/OIBSIP-WebDevTask4/"><i class="uil uil-external-link-alt"></i></a>
+                    </div>  
+                </div>
+                <div class="project">
+                    <img src="./pic1.jpg" alt="">
+                    <div class="notes">
+                        <h3>Temperature App</h3>
+                        <p>Allows users to convert Celsius, Fahrenheit,
+                         and Kelvin temperature units.<span> <i class="uil uil-html5" id="icon-project"></i><i class="uil uil-css3-simple" id="icon-project"></i> <i class="uil uil-java-script" id="icon-project"></i></span></p>
+                        <a href="https://tshenolokab.github.io/OIBSIP-WebDevTask3/"><i class="uil uil-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="./Clock.jpg" alt="">
+                    <div class="notes">
+                        <h3>Clock App</h3>
+                        <p>
+                        It displays the current time to users<span>  <i class="uil uil-html5" id="icon-project"></i>  <i class="uil uil-css3-simple" id="icon-project"></i>  <i class="uil uil-java-script" id="icon-project"></i></span></p>
+                        <a href="https://tshenolokab.github.io/OIBSIP-WebDevTask5/"><i class="uil uil-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------ footer ---------->
+        <footer>
+            <p>&copy;Copyright. Tshenolo Kabikwa. All rights reserved.</p>
+        </footer>
+        </div>
+
+
+    <script>
+       const tablinks = document.getElementsByClassName('tab-links') ;
+       const tabcontents = document.getElementsByClassName('tab-contents') ;
+       
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link');
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")  
+       }
+    </script>    
+    <script>
+        const sidemenu = document.getElementById('sidemenu');
+        function openmenu(){
+            sidemenu.style.right='0';
+        }
+        function closemenu(){
+            sidemenu.style.right='-200px';
+        }
+        
+    </script>
+</body>
+</html>
+
